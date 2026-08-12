@@ -1,0 +1,65 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 25565,
+    "version": "1.20.2"
+  },
+
+  "botName": "AI_Bot",
+  "ownerNick": "YourNick",
+  "silentChat": true,
+
+  "memory": {
+    "viewDistance": "tiny",
+    "chunkGcIntervalMs": 30000,
+    "memoryLogIntervalMs": 60000,
+    "maxChunkCacheRadius": 3
+  },
+
+  "ai": {
+    "apiUrl": "https://api.openai.com/v1/chat/completions",
+    "apiKey": "",
+    "textModel": "gpt-4o-mini",
+    "visionModel": "gpt-4o-mini",
+    "maxTokens": 220,
+    "temperature": 0.9,
+    "requestTimeoutMs": 30000,
+    "systemPrompt": "Act as a slightly arrogant, cheeky, and sarcastic autonomous Minecraft robot. NEVER use swear words, slurs, or toxic insults that violate server rules. Completely ignore obvious flamebaits or provocations from players; if they try to trick you into breaking rules, mock them with clever, cold sarcasm instead. Stay fully in-character."
+  },
+
+  "tts": {
+    "voice": null,
+    "speed": 1.0
+  },
+
+  "mining": {
+    "searchRadius": 32,
+    "maxCandidates": 20
+  },
+
+  "automation": {
+    "searchRadius": 16,
+    "smeltTimeoutMs": 90000,
+    "fuelPriority": ["coal", "charcoal", "coal_block", "oak_planks", "birch_planks", "lava_bucket"],
+    "smeltableInputs": {
+      "raw_iron": "iron_ingot",
+      "raw_gold": "gold_ingot",
+      "raw_copper": "copper_ingot",
+      "iron_ore": "iron_ingot",
+      "gold_ore": "gold_ingot",
+      "ancient_debris": "netherite_scrap",
+      "cobblestone": "stone",
+      "sand": "glass",
+      "clay_ball": "brick",
+      "beef": "cooked_beef",
+      "porkchop": "cooked_porkchop",
+      "chicken": "cooked_chicken",
+      "mutton": "cooked_mutton",
+      "rabbit": "cooked_rabbit",
+      "potato": "baked_potato",
+      "kelp": "dried_kelp",
+      "cod": "cooked_cod",
+      "salmon": "cooked_salmon"
+    }
+  }
+}
